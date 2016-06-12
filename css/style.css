@@ -121,6 +121,33 @@ header .navbar .navbar-nav a{
     height: 45px;
 }
 
+@media only screen and (max-width: 1200px){
+    header .navbar .navbar-nav a{
+    font-size: .8em;
+    width: 95px;
+    height: 45px;
+    }
+}
+
+@media only screen and (max-width: 992px){
+    header .navbar .navbar-nav a{
+    font-size: .6em;
+    width: 75px;
+    height: 45px;
+    }
+}
+
+@media only screen and (max-width: 768px){
+    #topNav-1-social{
+        padding-top: 0 px;
+    
+    }
+    
+    header .navbar{
+        margin-top: 185px;
+    }
+}
+
 /* Nav hover */
 
 header .navbar .navbar-nav .nav-red:hover{
