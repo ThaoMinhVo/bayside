@@ -1,0 +1,100 @@
+body{
+    position:fixed;
+}
+
+/** Header - TopNav-1 **/
+
+#topNav-1{
+    position: fixed;
+    top:0px;
+    left: 0px;
+    height: 129px;
+    width: 100%;
+    z-index: 100;
+    display:block;
+    padding-top: 30px;
+    background-image: url('/Images/Header/header-background.jpg');
+}
+
+#topNav-1-logo{
+    margin-left: 2px; 
+    width: 295px; 
+    height: 81px;
+}
+
+#topNav-1-social{
+    padding-top: 30px;
+    
+}
+
+#topNav-1-social a:hover{
+    background-color: transparent;
+}
+
+.topNavIcons {
+    height: 50px; 
+    width: 50px; 
+    margin: 0px 3px;
+}
+
+/** Facebook Icon **/
+
+#topNav-1-social div#fb{
+    background-image: url(../images/Header/icons-fb.png);
+    background-repeat: no-repeat;
+}
+
+#topNav-1-social div#fb:hover{
+    background-image: url(../images/Header/icon-facebook-blue.png);
+}
+
+/** Twitter Icon **/
+#topNav-1-social div#tw{
+    background-image: url(../images/Header/icons-tw.png);
+    background-repeat: no-repeat;
+}
+
+#topNav-1-social div#tw:hover{
+    background-image: url(../images/Header/icon-twitter-blue.png);
+}
+
+/** LinkedIn Icon **/
+#topNav-1-social div#in{
+    background-image: url(../images/Header/icons-in.png);
+    background-repeat: no-repeat;
+}
+
+#topNav-1-social div#in:hover{
+    background-image: url(../images/Header/icon-linkedin-blue.png);
+}
+
+/** GooglePlus Icon **/
+#topNav-1-social div#gg{
+    background-image: url(../images/Header/icons-gg.png);
+    background-repeat: no-repeat;
+}
+
+#topNav-1-social div#gg:hover{
+    background-image: url(../images/Header/icon-googleplus-red.png);
+}
+
+/** Yelp Icon **/
+#topNav-1-social div#yp{
+    background-image: url(../images/Header/icons-yp.png);
+    background-repeat: no-repeat;
+}
+
+#topNav-1-social div#yp:hover{
+    background-image: url(../images/Header/icon-yelp-red.png);
+}
+
+/** Instagram Icon **/
+#topNav-1-social div#ig{
+    background-image: url(../images/Header/icons-ig.png);
+    background-repeat: no-repeat;
+}
+
+#topNav-1-social div#ig:hover{
+    background-image: url(../images/Header/icon-instagram-brown.png);
+}
+
