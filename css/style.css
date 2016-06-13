@@ -139,70 +139,17 @@ header .navbar .container-fluid{
     padding: 0;
 }
 
+/*testing how to make gray top border of li extend to the end*/
+/*don't need this here otherwise*/
+header .navbar .navbar-nav{
+    width: 100%;
+}
+
 header .navbar .navbar-nav a{
     color: white;
     text-align: center;
     width: 118px;
     height: 45px;
-}
-
-@media only screen and (max-width: 1200px){
-    header .navbar .navbar-nav a{
-        font-size: .8em;
-        width: 95px;
-        height: 45px;
-    }
-    
-    #quick-links #quick-header{
-        display:none;
-    }
-    
-    #quick-links a{
-        display: inline-block;
-        width: 220px;
-        text-align: center;
-        margin: 0;
-    }
-    
-    .news{
-        margin-right: 79px !important;
-        background-size: cover;
-    }
-
-}
-
-@media only screen and (max-width: 992px){
-    header .navbar .navbar-nav a{
-        font-size: .6em;
-        width: 75px;
-        height: 45px;
-    }
-    
-     #quick-links a{
-        width: 150px;
-    }
-}
-
-@media only screen and (max-width: 767px){
-    #topNav-1-social{
-        padding-top: 0 px;
-        background-color: white;
-    }
-    
-    
-    header .navbar{
-        margin-top: 185px;
-    }
-    
-    #main{
-        margin-top: 235px;
-    }
-    
-    /* not working */
-    .iconGrowthContainer img{
-        width: 30px;
-        height: 31px;
-    }
 }
 
 /* Nav hover */
@@ -266,8 +213,6 @@ header .navbar .navbar-nav .nav-gray:hover{
 }
 .innerTopShadow {
     margin-top: -7px;
-    -webkit-box-shadow: -1px 4px 18px 5px rgba(72,72,72,0.8);
-    -moz-box-shadow: -1px 4px 18px 5px rgba(72,72,72,0.8);
     box-shadow: -1px 4px 18px 5px rgba(72,72,72,0.8);
 }
 
@@ -335,4 +280,69 @@ header .navbar .navbar-nav .nav-gray:hover{
 
 .ql:hover {
     background-color: #4a4b4b;
+}
+
+/** MEDIA QUERIES **/ 
+
+
+/* medium screens */
+@media only screen and (max-width: 1200px){
+    header .navbar .navbar-nav a{
+        font-size: .8em;
+        width: 95px;
+        height: 45px;
+    }
+    
+    #quick-links #quick-header{
+        display:none;
+    }
+    
+    #quick-links a{
+        display: inline-block;
+        width: 220px;
+        text-align: center;
+        margin: 0;
+    }
+    
+    .news{
+        margin-right: 79px !important;
+        background-size: cover;
+    }
+
+}
+
+/* small screens */
+@media only screen and (max-width: 992px){
+    header .navbar .navbar-nav a{
+        font-size: .6em;
+        width: 75px;
+        height: 45px;
+    }
+    
+     #quick-links a{
+        width: 150px;
+    }
+}
+
+/* x-small screens */
+@media only screen and (max-width: 767px){
+    #topNav-1-social{
+        padding-top: 0 px;
+        background-color: white;
+    }
+    
+    
+    header .navbar{
+        margin-top: 185px;
+    }
+    
+    #main{
+        margin-top: 235px;
+    }
+    
+    /* not working */
+    .iconGrowthContainer img{
+        width: 30px;
+        height: 31px;
+    }
 }
