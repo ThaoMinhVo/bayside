@@ -14,13 +14,9 @@ $(function(){
                 scroll_start = $(this).scrollTop();
                 if(scroll_start > offset.top) {
                     $("header div#topNav-1").css('display', 'none');
-                    //adds nav-logo to front of navbar
-                    //breaks code... why???
-                    //$("header .navbar .navbar-nav .nav-logo").css.('display','inline')
                     $("header nav").css('margin-top', '0');
                 } else {
                     $("header div#topNav-1").css('display', 'block');
-                    //$("header .navbar .navbar-nav .nav-logo").css.('display','none')
                     if($(window).width() <= 767){
                         $("header nav").css('margin-top', '187px');
                     }else{
@@ -37,13 +33,9 @@ $(function(){
             scroll_start = $(this).scrollTop();
             if(scroll_start > offset.top) {
                 $("header div#topNav-1").css('display', 'none');
-                //adds nav-logo to front of navbar
-                //breaks code... why???
-                //$("header .navbar .navbar-nav .nav-logo").css.('display','inline')
                 $("header nav").css('margin-top', '0');
             } else {
                 $("header div#topNav-1").css('display', 'block');
-                //$("header .navbar .navbar-nav .nav-logo").css.('display','none')
                 if($(window).width() <= 767){
                     $("header nav").css('margin-top', '187px');
                 }else{
