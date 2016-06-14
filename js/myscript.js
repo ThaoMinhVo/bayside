@@ -3,15 +3,15 @@
 $(function(){
     
     var scroll_start = 0;
-    var bluebg = $('#banner');
-    var offset = bluebg.offset();
+    var banner = $('#banner');
+    var offset = banner.offset();
     
     //Handles layout while resizing window because 
     //no scroll action takes place to call scroll function
     $(window).resize(function () {
-        if (bluebg.length){
+        if (banner.length){
             $(document).scroll(function() { 
-                scroll_start = $(this).scrollTop()+129;
+                scroll_start = $(this).scrollTop();
                 if(scroll_start > offset.top) {
                     $("header div#topNav-1").css('display', 'none');
                     //adds nav-logo to front of navbar
@@ -32,9 +32,9 @@ $(function(){
     });
 
     //handles appearance of logo and social nav depending on location of page scroll
-    if (bluebg.length){
+    if (banner.length){
         $(document).scroll(function() { 
-            scroll_start = $(this).scrollTop()+129;
+            scroll_start = $(this).scrollTop();
             if(scroll_start > offset.top) {
                 $("header div#topNav-1").css('display', 'none');
                 //adds nav-logo to front of navbar

@@ -242,8 +242,9 @@ header .navbar .navbar-nav .nav-gray:hover{
 
 #news-resources{
     background-color: #E8E8E8;
-    padding: 50px 0;
-    position: relative;
+    padding-top: 50px;
+    padding-bottom: 20px;
+    position: static;
 }
 
 .news{
@@ -259,7 +260,7 @@ header .navbar .navbar-nav .nav-gray:hover{
     position: absolute;
     bottom: 0;
     width: 100%;
-    font-size: 1em;
+    font-size: .9em;
     font-weight: 300;
 }
 
