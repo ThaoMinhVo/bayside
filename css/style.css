@@ -145,6 +145,11 @@ header .navbar .navbar-nav{
     width: 100%;
 }
 
+header .navbar .navbar-nav .nav-logo{
+    display: none;
+}
+
+
 header .navbar .navbar-nav a{
     color: white;
     text-align: center;
@@ -221,7 +226,7 @@ header .navbar .navbar-nav .nav-gray:hover{
 }
 
 .iconGrowthContainer img{
-    height: 93px; 
+    height: auto;
     width: 90px;
 }
 
@@ -237,36 +242,67 @@ header .navbar .navbar-nav .nav-gray:hover{
 
 #news-resources{
     background-color: #E8E8E8;
-    padding-top: 50px;
-    padding-left: 20px;
-    height:500px;
+    padding: 50px 0;
+    position: relative;
 }
 
 .news{
-    margin-right: 32px; 
     margin-bottom: 20px;
     padding: 0;
+    min-height: 336px;
+    position: relative;
+}
+
+#news .info {
+    background-color: rgba(0,0,0, .5);
+    padding: 10px 5%;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    font-size: 1em;
+    font-weight: 300;
+}
+
+#news .title{
+    text-align: center;
 }
 
 #health-news{
     background-image: url('../images/Home/health-1.jpg'); 
     background-repeat: no-repeat;
-    overflow-y: hidden;
+    background-size: cover;
 }
 
 #auto-news{
     background-image: url('../images/Home/auto-1.jpg');
     background-repeat: no-repeat;
-    overflow-y: hidden;
+    background-size: cover;
 }
 
 #home-news{
     background-image: url('../images/Home/home-1.jpg'); 
     background-repeat: no-repeat;
-    overflow-y: hidden;
+    background-size: cover;
 }
 
-#quick-links{ 
+#news .info .more{
+    opacity: 0;
+    font-size: 0;
+    line-height: 0;
+    padding-top: 10px; 
+}
+
+#news .info:hover .more {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 100;
+    display:block;
+    height: 262px;
+    opacity: 1;
+    font-size: 1em;
+    line-height: 120%;
+}
+
+/*#quick-links{ 
     display:inline-block;
 }
 
@@ -280,7 +316,7 @@ header .navbar .navbar-nav .nav-gray:hover{
 
 .ql:hover {
     background-color: #4a4b4b;
-}
+}*/
 
 /** MEDIA QUERIES **/ 
 
@@ -291,22 +327,6 @@ header .navbar .navbar-nav .nav-gray:hover{
         font-size: .8em;
         width: 95px;
         height: 45px;
-    }
-    
-    #quick-links #quick-header{
-        display:none;
-    }
-    
-    #quick-links a{
-        display: inline-block;
-        width: 220px;
-        text-align: center;
-        margin: 0;
-    }
-    
-    .news{
-        margin-right: 79px !important;
-        background-size: cover;
     }
 
 }
@@ -319,8 +339,13 @@ header .navbar .navbar-nav .nav-gray:hover{
         height: 45px;
     }
     
-     #quick-links a{
-        width: 150px;
+    .iconGrowthContainer img{
+        width: 80px;
+    }
+    
+    
+    #news .info:hover .more {
+        height: 238px;
     }
 }
 
@@ -340,9 +365,8 @@ header .navbar .navbar-nav .nav-gray:hover{
         margin-top: 235px;
     }
     
-    /* not working */
     .iconGrowthContainer img{
-        width: 30px;
-        height: 31px;
+        width: 65px;
     }
+    
 }
